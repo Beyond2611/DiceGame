@@ -120,8 +120,10 @@ public class Main {
                         continue;
                     }
                     if(tempCurPoint + point > 21){
-                        player.setLost(true);
-                        System.out.println("Points exceeded 21, you are eliminated!");
+                        /// uncomment if blackjack
+                        /*player.setLost(true);
+                        System.out.println("Points exceeded 21, you are eliminated!");*/
+                        System.out.println("Points exceeded 21, your point have been resetted");
                         System.out.println("Press the enter key to continue!");
                         in.nextLine();
                         player.setCurPoint(0);
